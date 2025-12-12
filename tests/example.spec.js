@@ -12,7 +12,7 @@ test('has title', async ({ page, context }) => {
   await page.goto('https://playwright.dev/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright1/);
+  await expect(page).toHaveTitle(/Playwright/);
 
   /*await context.tracing.stop({ path: 'test1_trace.zip' });*/
 });
