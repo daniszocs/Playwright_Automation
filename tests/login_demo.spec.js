@@ -31,7 +31,7 @@ test('Demo Login Test 2', async ({page}) => {
 
 test.only('Demo Login Test 3', async ({page}) => {
 
-  await page.pause()
+  //await page.pause()
   await page.goto('https://admin-demo.nopcommerce.com/login');
   
   
