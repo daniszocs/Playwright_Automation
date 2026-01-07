@@ -24,7 +24,7 @@ test('Demo Login Test 2', async ({page}) => {
     await page.getByRole('textbox', { name: 'Password' }).click();
     await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.getByRole('listitem').filter({ hasText: 'akash lala' }).locator('i').click();
+   await page.getByRole('listitem').filter({ class: 'oxd-icon bi-caret-down-fill oxd-userdropdown-icon' }).locator('i').click();
     await page.getByRole('menuitem', { name: 'Logout' }).click();
 })
 
